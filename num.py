@@ -21,3 +21,7 @@ def submit():
         'gpa': gpa,
         'essay': essay
     })
+    return f"Thank you, {name}! Your application has been submitted."
+
+if __name__ == '__main__':
+    app.run(debug=True)
