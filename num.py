@@ -14,3 +14,10 @@ def submit():
     email = request.form['email']
     gpa = float(request.form['gpa'])
     essay = request.form['essay']
+    # Save to "database"
+    applications.append({
+        'name': name,
+        'email': email,
+        'gpa': gpa,
+        'essay': essay
+    })
