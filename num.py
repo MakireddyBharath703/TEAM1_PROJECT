@@ -8,4 +8,9 @@ applications = []
 @app.route('/')
 def form():
     return render_template('application_form.html')
-
+@app.route('/submit', methods=['POST'])
+def submit():
+    name = request.form['name']
+    email = request.form['email']
+    gpa = float(request.form['gpa'])
+    essay = request.form['essay']
