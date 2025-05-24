@@ -34,3 +34,10 @@ if __name__ == '__main__':
         # Determine eligibility
         if gpa >= 3.5:
             print("Congratulations, you're eligible for a scholarship!")
+            elif 3.0 <= gpa < 3.5:
+            print("You're on the waiting list.")
+        else:
+            print("Keep up the good work.")
+    except ValueError:
+        print("Invalid input. Please enter a numerical value for GPA.")
+
