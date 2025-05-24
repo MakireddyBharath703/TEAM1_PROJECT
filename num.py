@@ -25,3 +25,12 @@ def submit():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+    def check_scholarship_eligibility():
+    try:
+        # Input GPA
+        gpa = float(input("Enter your GPA: "))
+        
+        # Determine eligibility
+        if gpa >= 3.5:
+            print("Congratulations, you're eligible for a scholarship!")
